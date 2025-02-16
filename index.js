@@ -6,9 +6,9 @@ let button = document.querySelector("#notify");
 let input = document.querySelector("#input");
 
 let secValue = 59;
-let   minValue = 59;
-let   hourValue = 23;
-let  dayValue = 30;
+let minValue = 59;
+let hourValue = 23;
+let dayValue = 30;
 
 const timeFunction = setInterval(() => {
     secValue--;
@@ -22,10 +22,12 @@ const timeFunction = setInterval(() => {
         minValue = 59;
         hourValue--;
     }
+
     if(hourValue < 0) {
         hourValue = 23;
         dayValue--;
     }
+    
     if(dayValue < 0) {
         clearInterval(timeFunction);
         return;
