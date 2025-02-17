@@ -99,6 +99,7 @@ header span {
     border: 2px solid var(--secondary-color);
     font-size: 16px;
     background: var(--background-color);
+    border-radius: 10px;
 }
 
 .input-div button {
@@ -109,6 +110,7 @@ header span {
     font-size: 17px;
     transition: all 0.3s ease;
     background: var(--secondary-color);
+    border-radius: 10px;
 }
 
 @media (max-width: 768px) {
